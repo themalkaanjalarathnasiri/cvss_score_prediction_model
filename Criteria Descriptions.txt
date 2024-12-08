@@ -1,0 +1,72 @@
+1. CWE Code (CWE ID):
+
+    Input Type: Text Field
+    Description: The CWE (Common Weakness Enumeration) is a list of software weaknesses. The CWE Code is a numerical identifier for a specific weakness in the CWE list. You can input the CWE code (e.g., 352) for a specific vulnerability.
+    Example Input: 352 (Cross-Site Request Forgery (CSRF))
+
+2. Access Authentication:
+
+    Input Type: Dropdown
+    Description: This metric measures the authentication requirements for exploiting the vulnerability. It specifies how much access control is required to exploit the vulnerability.
+    Options:
+        SINGLE: The attacker must authenticate only once to exploit the vulnerability (e.g., after logging in).
+        MULTIPLE: The attacker must authenticate multiple times to exploit the vulnerability.
+        NONE: The attacker does not need to authenticate at all to exploit the vulnerability (e.g., no password is required).
+    How it affects CVSS: More complex authentication generally reduces the severity of a vulnerability.
+
+3. Access Complexity:
+
+    Input Type: Dropdown
+    Description: This metric measures the difficulty of exploiting the vulnerability. It reflects how easy or hard it is to successfully exploit the vulnerability.
+    Options:
+        LOW: The vulnerability can be exploited easily with minimal effort.
+        MEDIUM: The vulnerability requires moderate skill or effort to exploit.
+        HIGH: The vulnerability requires advanced skill, resources, or multiple conditions to be met before exploitation.
+    How it affects CVSS: A higher complexity (i.e., HIGH) lowers the severity of the vulnerability.
+
+4. Access Vector:
+
+    Input Type: Dropdown
+    Description: This metric specifies how the attacker can reach the vulnerable system. It describes the location of the attacker relative to the target system.
+    Options:
+        NETWORK: The attacker can exploit the vulnerability remotely over a network (e.g., via the internet).
+        LOCAL: The attacker must have local access to the system to exploit the vulnerability (e.g., logged-in user).
+        ADJACENT_NETWORK: The attacker must be in an adjacent network (e.g., within the same subnet or LAN) to exploit the vulnerability.
+    How it affects CVSS: A remote attack vector (e.g., NETWORK) increases the severity of the vulnerability.
+
+5. Impact Availability (Impact on Availability):
+
+    Input Type: Dropdown
+    Description: This metric measures the potential impact on the availability of the target system or data. It reflects how the exploitation of the vulnerability would affect the availability of the system (e.g., causing a denial of service).
+    Options:
+        NONE: Exploiting the vulnerability does not affect availability.
+        PARTIAL: Exploiting the vulnerability causes a partial loss of availability (e.g., system slowdown).
+        COMPLETE: Exploiting the vulnerability results in a complete loss of availability (e.g., system crash or service shutdown).
+    How it affects CVSS: A higher impact on availability (e.g., COMPLETE) increases the severity of the vulnerability.
+
+6. Impact Confidentiality (Impact on Confidentiality):
+
+    Input Type: Dropdown
+    Description: This metric measures the impact of a vulnerability on confidentiality. It represents the extent to which the vulnerability allows unauthorized access to sensitive data.
+    Options:
+        NONE: Exploiting the vulnerability does not result in unauthorized access to confidential information.
+        PARTIAL: Exploiting the vulnerability results in partial disclosure of confidential data (e.g., some information is leaked).
+        COMPLETE: Exploiting the vulnerability results in full disclosure of confidential data (e.g., access to all sensitive data).
+    How it affects CVSS: A higher impact on confidentiality (e.g., COMPLETE) increases the severity of the vulnerability.
+
+7. Impact Integrity (Impact on Integrity):
+
+    Input Type: Dropdown
+    Description: This metric measures the impact of the vulnerability on integrity. It describes how much the vulnerability allows unauthorized modification of data or code.
+    Options:
+        NONE: Exploiting the vulnerability does not allow any modification of data.
+        PARTIAL: Exploiting the vulnerability allows partial modification of data (e.g., changes to certain data).
+        COMPLETE: Exploiting the vulnerability allows complete modification of data (e.g., data is completely compromised).
+        UNKNOWN: The impact on integrity is unknown or undefined.
+    How it affects CVSS: A higher impact on integrity (e.g., COMPLETE) increases the severity of the vulnerability.
+
+8. Summary:
+
+    Input Type: Text Area
+    Description: This field allows the user to provide a brief description of the vulnerability. The summary text helps to describe the nature of the vulnerability and may include details like the affected systems, how the vulnerability can be exploited, and other relevant information.
+    Example Input: "A vulnerability in the login system allows an attacker to bypass authentication using a crafted token."

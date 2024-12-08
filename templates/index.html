@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CVSS Prediction</title>
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <h1>Enter Vulnerability Details for CVSS Prediction</h1>
+    <form action="/predict" method="POST">
+      <label for="cwe_code">CWE Code:</label>
+      <input type="number" id="cwe_code" name="cwe_code" required /><br />
+
+      <label for="access_authentication">Access Authentication:</label>
+      <input
+        type="text"
+        id="access_authentication"
+        name="access_authentication"
+        required
+      /><br />
+
+      <label for="access_complexity">Access Complexity:</label>
+      <input
+        type="text"
+        id="access_complexity"
+        name="access_complexity"
+        required
+      /><br />
+
+      <label for="access_vector">Access Vector:</label>
+      <input
+        type="text"
+        id="access_vector"
+        name="access_vector"
+        required
+      /><br />
+
+      <label for="impact_availability">Impact on Availability:</label>
+      <input
+        type="text"
+        id="impact_availability"
+        name="impact_availability"
+        required
+      /><br />
+
+      <label for="impact_confidentiality">Impact on Confidentiality:</label>
+      <input
+        type="text"
+        id="impact_confidentiality"
+        name="impact_confidentiality"
+        required
+      /><br />
+
+      <label for="impact_integrity">Impact on Integrity:</label>
+      <input
+        type="text"
+        id="impact_integrity"
+        name="impact_integrity"
+        required
+      /><br />
+
+      <label for="summary">Vulnerability Summary:</label>
+      <textarea id="summary" name="summary" rows="4" required></textarea><br />
+
+      <button type="submit">Predict CVSS</button>
+    </form>
+
+    {% if prediction is not none %}
+    <div class="result">
+      <h2>Predicted CVSS Score: {{ prediction }}</h2>
+    </div>
+    {% endif %}
+  </body>
+</html>

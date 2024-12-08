@@ -1,0 +1,24 @@
+CVE-2023-47233 (Use After Free in Linux Kernel)
+
+    CWE Code: CWE-416 (Use After Free)
+    Access Authentication: NONE
+    Access Complexity: LOW
+    Access Vector: PHYSICAL
+    Impact on Availability: COMPLETE
+    Impact on Confidentiality: NONE
+    Impact on Integrity: NONE
+    Vulnerability Summary:  Denial of Service (system crash) due to improper memory handling during system operations in Linux Kernel.
+    CVSS v3.1 Base Score: 6.0 (Medium)
+
+CVE Code: CVE-2024-7392
+CWE Code: CWE-400 (Uncontrolled Resource Consumption)
+Access Authentication: SINGLE
+Access Complexity: LOW
+Access Vector: NETWORK-ADJACENT
+Impact on Availability: COMPLETE
+Impact on Confidentiality: PARTIAL
+Impact on Integrity: PARTIAL
+
+A vulnerability in ChargePoint Home Flex charging devices allows network-adjacent attackers to create a denial-of-service (DoS) condition.
+
+CVSS v3.1 Score: 6.5 (Medium)

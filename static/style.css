@@ -1,0 +1,65 @@
+/* Global body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+/* Title */
+h1 {
+  color: #4caf50;
+  font-size: 24px;
+}
+
+/* Form styling */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form labels and inputs */
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  padding: 8px;
+  width: 100%;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the result */
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+  background-color: #e7f7e7;
+  padding: 15px;
+  border-radius: 5px;
+}
